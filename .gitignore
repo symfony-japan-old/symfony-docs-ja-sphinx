@@ -4,13 +4,13 @@ tempja/build/*
 tempja/source/*
 
 !temp/source/_static
-!temp/source/_ext
+!temp/source/_exts
 !temp/source/_templates
 !temp/source/conf.py
 !temp/source/configurationblock.py
 !temp/source/configurationblock.pyc
 !tempja/source/_static
-!tempja/source/_ext
+!tempja/source/_exts
 !tempja/source/_templates
 !tempja/source/_themes
 !tempja/source/conf.py
