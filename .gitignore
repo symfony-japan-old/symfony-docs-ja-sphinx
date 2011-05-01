@@ -12,6 +12,7 @@ tempja/source/*
 !tempja/source/_static
 !tempja/source/_ext
 !tempja/source/_templates
+!tempja/source/_themes
 !tempja/source/conf.py
 !tempja/source/configurationblock.py
 !tempja/source/configurationblock.pyc
