@@ -1026,8 +1026,25 @@ div.documentwrapper {
     background-color: #000;
 }
 
+
+
+
+.common_content_footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #666;
+    background-color: #EEE;
+    border-bottom: 1px solid #666;
+    padding: 10px;
+}
+
 #disqus_thraed {
     margin-top: 20px;
     border-top: 1px solid #999;
     padding-top: 20px;
 }
+
+div.caution {
+    background-color: #fdd !important;
+}
+
