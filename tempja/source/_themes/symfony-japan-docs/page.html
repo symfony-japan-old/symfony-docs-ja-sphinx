@@ -11,6 +11,15 @@
 {% block body %}
   {{ body }}
 
+<div id="page_prev_next">
+{%- if prev %}
+<a class="prev" href="{{ prev.link }}">< {{ prev.title }}</a>
+{%- endif %}
+{%- if next %}
+<a class="next" href="{{ next.link }}">{{ next.title }} ></a>
+{%- endif %}
+</div>
+
 <div class="common_content_footer">
 <ul>
   <li> → <a href="http://symfony.com/doc/2.0/{{ pagename }}.html">公式英語ドキュメント</a></li>
