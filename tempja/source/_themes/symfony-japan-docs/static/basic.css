@@ -1022,3 +1022,12 @@ div.documentwrapper {
     width: 710px;
 }
 
+.highlight-yml pre {
+    background-color: #000;
+}
+
+#disqus_thraed {
+    margin-top: 20px;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+}
