@@ -4,3 +4,12 @@
 [submodule "symfony-docs-ja"]
 	path = symfony-docs-ja
 	url = git://github.com/symfony-japan/symfony-docs-ja.git
+[submodule "SensioGeneratorBundle"]
+	path = SensioGeneratorBundle
+	url = git://github.com/sensio/SensioGeneratorBundle.git
+[submodule "SensioFrameworkExtraBundle"]
+	path = SensioFrameworkExtraBundle
+	url = git://github.com/sensio/SensioFrameworkExtraBundle.git
+[submodule "JMSSecurityExtraBundle"]
+	path = JMSSecurityExtraBundle
+	url = git://github.com/schmittjoh/JMSSecurityExtraBundle.git

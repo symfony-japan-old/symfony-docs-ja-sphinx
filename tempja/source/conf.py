@@ -94,6 +94,7 @@ lexers['php'] = PhpLexer(startinline=True)
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
+primary_domain = 'php'
 
 # -- Options for HTML output ---------------------------------------------------
 
