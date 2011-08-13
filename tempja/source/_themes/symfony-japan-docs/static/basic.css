@@ -574,7 +574,7 @@ a {
 }
 
 img {
-  margin: 0;
+  margin: 0 0 25px 0;
   padding: 0;
   border: 0;
   vertical-align: middle;
