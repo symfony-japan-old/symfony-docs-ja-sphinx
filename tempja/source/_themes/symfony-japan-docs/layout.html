@@ -28,6 +28,7 @@
             </a></p>
           {%- endif %}
           {%- endblock %}
+<div class="fb-like-box" data-href="http://www.facebook.com/symfonyjapan" data-width="203" data-show-faces="true" data-stream="true" data-border-color="#FFF" data-header="true"></div>
           {%- if sidebars != None %}
             {#- new style sidebar: explicitly include/exclude templates #}
             {%- for sidebartemplate in sidebars %}
@@ -52,16 +53,19 @@
             {%- endblock %}
           {%- endif %}
           <br />
-          <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=47270766548";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<br />
-          <script type="text/javascript" src="http://symfony-japan.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=200"></script><a href="http://disqus.com/">Powered by Disqus</a>
+          <br />
+          <div id="other">
+            <h3>クイックリンク</h3>
+            <ul>
+              <li><a href="{{ pathto('book/installation') }}">インストール方法</a></li>
+              <li><a href="{{ pathto('reference/forms/types') }}">FormTypeリファレンス</a></li>
+              <li><a href="{{ pathto('reference/constraints') }}">バリデータリファレンス</a></li>
+              <li><a href="http://twig.sensiolabs.org/documentation">Twigリファレンス</a></li>
+              <li><a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/annotations-reference.html">Doctrine ORMアノテーションリファレンス</a></li>
+            </ul>
+            <br />
+            <p>現在、翻訳が古くなっている箇所が多くあります。1箇所、1行などほんの少量でもかまいませんので、ドキュメント翻訳にご協力いただける方を募集しています。<a href="http://groups.google.com/group/symfony-users-ja">日本 Symfony ユーザー会メーリングリスト</a>までご連絡ください。</p>
+          </div>
         </div>
       </div>
       {%- endif %}
@@ -144,7 +148,14 @@
 {%- block extrahead %} {% endblock %}
   </head>
   <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=47270766548";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="all">
   <div id="content">
     <div id="content_wrapper">
@@ -227,8 +238,8 @@
       </div>
       <!-- end #navbar -->
         <div>
-          <p id="copy">
-            Copyright &copy; 2011 Symfony Japan. All rights reserved.
+          <p id="copyright">
+            Copyright &copy; 2011-2013 Symfony Japan. All rights reserved.
             &nbsp;&nbsp;&nbsp;Bandwidth and hardware provided by <a href="http://www.asial.co.jp/">アシアル株式会社</a>
             &nbsp;&nbsp;Powered by <a href="http://sphinx.pocoo.org/">Sphinx</a>
           </p>

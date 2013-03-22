@@ -982,7 +982,7 @@ textarea:focus{
 #f_navbar ul li a:hover { color: #09F; }
 #f_navbar ul li a.this {  color: #09F; background: url(images/nav_arrow_2.png) no-repeat center top; }
 
-#copy {
+#copyright {
 	text-align: center;
 	font-size: 11px;
 	line-height: 2em;
