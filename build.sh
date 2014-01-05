@@ -1,10 +1,9 @@
 #!/bin/sh
 
-cd temp
-cp -R ../symfony-docs/* source/
-make html
+rm -rf symfony-docs-ja
+git clone git://github.com/symfony-japan/symfony-docs-ja.git
 
-cd ../tempja
+cd tempja
 cp -R ../symfony-docs-ja/* source/
 make html
 

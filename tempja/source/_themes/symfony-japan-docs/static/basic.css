@@ -239,7 +239,7 @@ img.align-center, .figure.align-center, object.align-center {
 }
 
 .align-center {
-    clear: both;
+/*    clear: both; */
     text-align: center;
 }
 
@@ -574,7 +574,7 @@ a {
 }
 
 img {
-  margin: 0 0 25px 0;
+  margin: 0;
   padding: 0;
   border: 0;
   vertical-align: middle;
@@ -611,25 +611,26 @@ textarea:focus{
 
 #all {
 	width: 100%;
-	background: url(images/all_bg.png) repeat-x left top;
+	background: url(images/all_bg.png) repeat-x left -162px;
 }
 
 #content {
-	width: 950px;
+	width: 90%;
+/*	width: 950px; */
 	margin: 0 auto;
 }
 
 #content_wrapper {
-	background: url(images/all_bg_l.png) no-repeat -30px top;
+	background: url(images/all_bg_l.png) no-repeat -30px -162px;
 }
 
 
 /*top_menu
 ---------------------------------------------- */
 #top_menu {
-	height: 50px;
+	height: 0px;
 	text-align: right;
-	background: url(images/header_bg_top.png) no-repeat left top;
+/*	background: url(images/header_bg_top.png) no-repeat left top; */
 }
 
 #top_menu_wrapper {
@@ -649,18 +650,12 @@ textarea:focus{
 /*header
 ---------------------------------------------- */
 #header_top {
-	height: 212px;
-	background: url(images/sf2_header_bg_bottom.png) repeat-x left top;
+	height: 100px;
+	background: url(images/header_bg_bottom.png) no-repeat left -32px;
 	position: relative;
 }
 
 #header_top_left {
-	position: absolute;
-	left: -95px;
-	top: -50px;
-	width: 95px;
-	height: 310px;
-	background: url(images/all_bg_l.png) no-repeat;
 }
 
 .header_info {
@@ -678,7 +673,7 @@ textarea:focus{
 #logo_top a {
 	width: 560px;
 	height: 90px;
-	background: url(images/logo_top.png) no-repeat left top;
+/*	background: url(images/logo_top.png) no-repeat left top; */
 	position: absolute;
 	left: 22px;
 	top: 40px;
@@ -782,7 +777,7 @@ textarea:focus{
 /*navbar
 ---------------------------------------------- */
 #navbar {
-	width: 950px;
+	width: 90%;
 	height: 48px;
 	background: url(images/navbar_bg_top.png) no-repeat left top;
 	position: relative;
@@ -837,7 +832,6 @@ textarea:focus{
 	float: left;
 }
 #main_content2 {
-	width: 690px;
 	margin-right: 25px;
 	margin-bottom: 50px;
 	float: left;
@@ -982,7 +976,7 @@ textarea:focus{
 #f_navbar ul li a:hover { color: #09F; }
 #f_navbar ul li a.this {  color: #09F; background: url(images/nav_arrow_2.png) no-repeat center top; }
 
-#copyright {
+#copy {
 	text-align: center;
 	font-size: 11px;
 	line-height: 2em;
@@ -1018,11 +1012,16 @@ textarea:focus{
     width: 97%;
 }
 div.documentwrapper {
-    float: left;
-    width: 710px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 250px;
 }
 
 .highlight-yml pre {
+    background-color: #000;
+}
+
+.highlight-yaml pre {
     background-color: #000;
 }
 
@@ -1063,3 +1062,35 @@ div.caution {
     text-align: right;
 }
 
+.column {
+    border-left: 1px solid #CCC;
+    padding: 20px;
+}
+
+.column h2 {
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-bottom: 5px;
+}
+
+.column li {
+    margin-bottom: 5px;
+}
+
+.column a {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #303030 !important;
+}
+.highlight-yaml pre {
+    background-color: #303030 !important;
+}
+
+#copyright {
+    color: #999;
+    font-size: 12px;
+}
