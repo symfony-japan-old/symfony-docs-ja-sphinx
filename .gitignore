@@ -2,6 +2,7 @@ temp/build/*
 temp/source/*
 tempja/build/*
 tempja/source/*
+symfony-docs-ja
 
 !temp/source/_static
 !temp/source/_exts
