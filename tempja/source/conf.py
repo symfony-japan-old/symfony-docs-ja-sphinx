@@ -29,8 +29,8 @@ sys.path.append(os.path.abspath('_exts'))
 #extensions = ['configurationblock']
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest',
               'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.ifconfig',
-              'sphinx.ext.viewcode', 'sphinx.ext.extlinks', 'configurationblock',
-              'sphinxcontrib.phpdomain',]
+              'sphinx.ext.viewcode', 'sphinx.ext.extlinks', 
+              'sensio.sphinx.refinclude', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode',]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -93,7 +93,10 @@ from sphinx.highlighting import lexers
 from pygments.lexers.web import PhpLexer
 lexers['php'] = PhpLexer(startinline=True)
 lexers['php-annotations'] = PhpLexer(startinline=True)
+lexers['php-standalone'] = PhpLexer(startinline=True)
+lexers['php-symfony'] = PhpLexer(startinline=True)
 
+api_url = 'http://api.symfony.com/master/%s'
 #from pygments.lexers.web import PhpLexer
 #PhpLexer.startinline = True
 
