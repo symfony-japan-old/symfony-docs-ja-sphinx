@@ -8,6 +8,17 @@
     :license: BSD, see LICENSE for details.
 #}
 {% extends "layout.html" %}
+
+{% block header %}
+<a href="/">Home</a>{{ reldelim2 }}
+<a href="{{ pathto(master_doc) }}">{{ project|e }}</a>
+{%- for parent in parents %}
+&raquo;<a href="{{ parent.link|e }}">{{ parent.title }}</a>
+{% if loop.last %}&raquo;{{ title }}{% endif %}
+{%- endfor %}
+{{ super() }}
+{% endblock %}
+
 {% block body %}
 
 <p>コンテンツ上部に更新日の記載のないページは、翻訳の内容が2.0相当のものになっております。最新の内容は<a href="http://symfony.com/doc/current/{{ pagename }}.html">原文のページ</a>をご確認ください。</p>
